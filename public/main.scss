@@ -18,7 +18,7 @@ $nav-link-disabled-color: #8b8b8c;
 $nav-link-focus-box-shadow: #8b8b8c;
 $nav-underline-link-active-color: #8b8b8c;
 
-@import "..//node_modules/bootstrap/scss/bootstrap"; // Then add additional custom code here
+@import "../node_modules/bootstrap/scss/bootstrap"; // Then add additional custom code here
 .bg-body-primary {
   --bs-bg-opacity: 1;
 }
