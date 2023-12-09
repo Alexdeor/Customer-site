@@ -12004,6 +12004,13 @@ body {
   /* Hide the img tag from accessibility tools and screen readers */
 }
 
+img {
+  user-drag: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+
 .nav-container {
   overflow: hidden;
 }
@@ -12191,10 +12198,9 @@ h1::after, .h1::after {
   position: relative;
 }
 .work-experience .card-container {
-  display: flex;
   position: absolute;
-  top: 16%;
-  width: 70%;
+  top: 25%;
+  width: 100%;
   justify-content: space-around;
   overflow: hidden;
 }

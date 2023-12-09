@@ -32,6 +32,11 @@ body {
   padding: 0;
   /* Hide the img tag from accessibility tools and screen readers */
 }
+img {
+  user-drag: none;
+  user-select: none;
+}
+
 .nav-container {
   overflow: hidden;
 }
@@ -199,10 +204,9 @@ h1::after {
   height: 1000px;
   position: relative;
   .card-container {
-    display: flex;
     position: absolute;
-    top: 16%;
-    width: 70%;
+    top: 25%;
+    width: 100%;
     justify-content: space-around;
     overflow: hidden;
     .card {

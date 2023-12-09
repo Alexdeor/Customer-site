@@ -108,4 +108,3 @@ function extractDom() {
   }
 }
 extractDom();
-console.log(date.getMonth());
