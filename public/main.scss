@@ -18,7 +18,7 @@ $nav-link-disabled-color: #8b8b8c;
 $nav-link-focus-box-shadow: #8b8b8c;
 $nav-underline-link-active-color: #8b8b8c;
 
-@import "../node_modules/bootstrap/scss/bootstrap"; // Then add additional custom code here
+@import "..//node_modules/bootstrap/scss/bootstrap"; // Then add additional custom code here
 .bg-body-primary {
   --bs-bg-opacity: 1;
 }
@@ -118,10 +118,16 @@ h1::after {
 .content {
   section {
     padding-bottom: 10em;
+    padding-top: 10em;
   }
 }
 .nav {
   display: none;
+}
+.linkedin-logo {
+  height: 50px;
+  padding: 8px;
+  cursor: pointer;
 }
 .hiddenText {
   opacity: 0;
@@ -185,14 +191,13 @@ h1::after {
     font-size: 40px;
   }
 }
-
+.work-container {
+  display: grid;
+  justify-items: center;
+}
 .work-experience {
   height: 1000px;
   position: relative;
-  .container {
-    display: grid;
-    justify-items: center;
-  }
   .card-container {
     display: flex;
     position: absolute;
@@ -210,7 +215,7 @@ h1::after {
       }
       .card-body {
         padding-top: 16px;
-        width: 100%;
+        width: 300px;
       }
       .card-text {
         padding-top: 0.5em;
@@ -308,7 +313,10 @@ footer {
   margin-bottom: 15px;
   border-radius: 4px;
 }
-
+h4 {
+  font-size: 20px;
+  width: 200px;
+}
 /* Styling for the success message */
 .validation-box.success {
   color: #155724;
@@ -337,7 +345,10 @@ footer {
 @media screen and (max-width: 400px) {
   .work-experience .card-container .card {
     width: 300px;
-    margin-bottom: 1em;
+
+    .card-body {
+      width: 200px;
+    }
   }
 }
 @media screen and (max-width: 1400px) {
@@ -351,6 +362,7 @@ footer {
     justify-items: center;
     font-weight: bold;
   }
+
   .title {
     background-color: #d9d9d979;
     display: grid;

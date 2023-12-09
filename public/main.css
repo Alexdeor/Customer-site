@@ -12098,10 +12098,17 @@ h1::after, .h1::after {
 
 .content section {
   padding-bottom: 10em;
+  padding-top: 10em;
 }
 
 .nav {
   display: none;
+}
+
+.linkedin-logo {
+  height: 50px;
+  padding: 8px;
+  cursor: pointer;
 }
 
 .hiddenText {
@@ -12174,13 +12181,14 @@ h1::after, .h1::after {
   font-size: 40px;
 }
 
+.work-container {
+  display: grid;
+  justify-items: center;
+}
+
 .work-experience {
   height: 1000px;
   position: relative;
-}
-.work-experience .container {
-  display: grid;
-  justify-items: center;
 }
 .work-experience .card-container {
   display: flex;
@@ -12202,7 +12210,7 @@ h1::after, .h1::after {
 }
 .work-experience .card-container .card .card-body {
   padding-top: 16px;
-  width: 100%;
+  width: 300px;
 }
 .work-experience .card-container .card .card-text {
   padding-top: 0.5em;
@@ -12307,6 +12315,11 @@ footer {
   border-radius: 4px;
 }
 
+h4, .h4 {
+  font-size: 20px;
+  width: 200px;
+}
+
 /* Styling for the success message */
 .validation-box.success {
   color: #155724;
@@ -12336,7 +12349,9 @@ footer {
 @media screen and (max-width: 400px) {
   .work-experience .card-container .card {
     width: 300px;
-    margin-bottom: 1em;
+  }
+  .work-experience .card-container .card .card-body {
+    width: 200px;
   }
 }
 @media screen and (max-width: 1400px) {
