@@ -26,7 +26,9 @@
       }
     }
   };
-  // Title movement
+  // Check if Intersection Observer is supported
+if ('IntersectionObserver' in window && 'IntersectionObserverEntry' in window && 'intersectionRatio' in window.IntersectionObserverEntry.prototype) {
+  // Intersection Observer is supported
   const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
@@ -39,6 +41,12 @@
 
   const hiddenItems = document.querySelectorAll(".hiddenText");
   hiddenItems.forEach((el) => observer.observe(el));
+} else {
+  // Intersection Observer is not supported, set default class
+  const hiddenItems = document.querySelectorAll(".hiddenText");
+  hiddenItems.forEach((el) => el.classList.add("showText"));
+  console.log("Intersection Observer is not supported on this browser. Using default class.");
+}
 
   /**
    * Easy on scroll event listener
