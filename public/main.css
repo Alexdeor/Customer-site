@@ -11993,7 +11993,7 @@ textarea.form-control-lg {
 }
 
 * {
-  -webkit-user-select: none; /* Safari */ /* IE 10 and IE 11 */
+  -webkit-user-select: none; /* Safaso and IE 11 */
   -moz-user-select: none;
        user-select: none; /* Standard syntax */
 }

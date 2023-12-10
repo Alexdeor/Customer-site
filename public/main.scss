@@ -18,13 +18,12 @@ $nav-link-disabled-color: #8b8b8c;
 $nav-link-focus-box-shadow: #8b8b8c;
 $nav-underline-link-active-color: #8b8b8c;
 
-@import "../node_modules/bootstrap/scss/bootstrap"; // Then add additional custom code here
+@import "../node_modules/bootstrap/scss/bootstrap.scss"; // Then add additional custom code here
 .bg-body-primary {
   --bs-bg-opacity: 1;
 }
 * {
-  -webkit-user-select: none; /* Safari */
-  -ms-user-select: none; /* IE 10 and IE 11 */
+  -webkit-user-select: none; /* Safaso and IE 11 */
   user-select: none; /* Standard syntax */
 }
 body {
