@@ -491,6 +491,9 @@ svg {
 }
 
 @media (max-width: 991px) {
+  .title-box{
+    animation:none;
+  }
   .hiddenText {
     opacity: 1;
   filter: blur(0px);
