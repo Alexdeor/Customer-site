@@ -491,6 +491,17 @@ svg {
 }
 
 @media (max-width: 991px) {
+  .hiddenText {
+    opacity: 1;
+  filter: blur(0px);
+  transform: translateX(0);
+}
+
+.showText {
+  opacity: 1;
+  filter: blur(0px);
+  transform: translateX(0);
+}
   .mobile-nav-toggle {
     display: block;
   }
