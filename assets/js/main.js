@@ -44,7 +44,9 @@ if ('IntersectionObserver' in window && 'IntersectionObserverEntry' in window &&
 } else {
   // Intersection Observer is not supported, set default class
   const hiddenItems = document.querySelectorAll(".hiddenText");
-  hiddenItems.forEach((el) => el.classList.add("showText"); el.classList.remove("hiddenText"));
+  hiddenItems.forEach((el) =>{
+    el.classList.add("showText"); 
+    el.classList.remove("hiddenText"));
 }
 
   /**
