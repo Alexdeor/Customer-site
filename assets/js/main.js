@@ -47,8 +47,8 @@ if ('IntersectionObserver' in window && 'IntersectionObserverEntry' in window &&
   hiddenItems.forEach((el) =>{
     el.classList.add("showText"); 
     el.classList.remove("hiddenText");
-})
-
+});
+}
   /**
    * Easy on scroll event listener
    */
