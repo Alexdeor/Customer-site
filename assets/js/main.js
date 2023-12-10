@@ -46,8 +46,8 @@ if ('IntersectionObserver' in window && 'IntersectionObserverEntry' in window &&
   const hiddenItems = document.querySelectorAll(".hiddenText");
   hiddenItems.forEach((el) =>{
     el.classList.add("showText"); 
-    el.classList.remove("hiddenText"));
-}
+    el.classList.remove("hiddenText");
+})
 
   /**
    * Easy on scroll event listener
